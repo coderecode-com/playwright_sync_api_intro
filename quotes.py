@@ -5,7 +5,7 @@ def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
-        page.goto('https://quotes.toscrape.com/')
+        page.goto('https://quotes.toscrape.com/js')
 
         heading = page.query_selector('//h1/a')
 
